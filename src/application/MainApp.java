@@ -84,7 +84,7 @@ public class MainApp extends Application {
     /**
      * Shows dialog for user input error
      * 
-     * @param inErr - message to dispaly
+     * @param inErr - message to display
      */
     public void showInputErrorDialog(String inErr) {
     	Alert alert = new Alert(AlertType.ERROR);
