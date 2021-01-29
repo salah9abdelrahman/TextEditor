@@ -18,6 +18,7 @@ public class MarkovTextGeneratorGrader {
             feedback += "\n** Test 1: Generating text before training...";
             try {
                 String s = gen.generateText(20);
+                feedback += "\n*******" + s + "\n*******\n";
                 feedback += "No error thrown. ";
             } catch (Exception e) {
                 feedback += "Error thrown. ";
@@ -27,6 +28,7 @@ public class MarkovTextGeneratorGrader {
             feedback += "\n** Test 2: Generating text after training on an empty file...";
             try {
                 String s = gen.generateText(20);
+                feedback += "\n*******" + s + "\n*******\n";
                 feedback += "No error thrown. ";
             } catch (Exception e) {
                 feedback += "Error thrown. ";
@@ -41,6 +43,7 @@ public class MarkovTextGeneratorGrader {
             String[] words = res.split("[\\s]+");
             feedback += "\n** Test #3: Checking requested generator word count...";
             feedback += "Your generator produced " + words.length + " words. ";
+            feedback += "\n*******" + "shiuld be " + LENGTH + "\n*******\n";
 
             HashMap<String, Integer> wordCounts = new HashMap<String, Integer>();
 
