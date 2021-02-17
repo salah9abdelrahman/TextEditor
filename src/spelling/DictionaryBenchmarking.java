@@ -33,7 +33,6 @@ public class DictionaryBenchmarking {
 		
 		String notInDictionary = "notaword";
 		
-		// TODO: Play around with the numbers above and graph the output to see trends in the data
 		for (int numToCheck = start; numToCheck < numSteps*increment + start; 
 				numToCheck += increment)
 		{
